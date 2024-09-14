@@ -3,63 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration form for students</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h2><PRE>                                            <U>REGISTRATION FORM FOR STUDENTS</U></PRE></h2>
-                <PRE>  <FORM ACTION="/action.php"> 
-                    <H3>SELECT YOUR CITY :</H3>
- <select NAME="CITY">
-    <OPTION VALUE="DELHI">DELHI</OPTION>
-    <OPTION VALUE="HYDERABAD">HYDERABAD</OPTION>
-    <OPTION VALUE="KOLKATA">KOLKATA</OPTION>
-    <OPTION VALUE="MUMBAI">MUMBAI</OPTION>
-    <OPTION VALUE="PUNE">PUNE</OPTION>
- </select>
-                    <H3>ENTER YOUR COLLEGE DETAILS :</H3>
-                    <PRE>   <B>NAME</B>   :    <input type="text" placeholder="ENTER YOUR NAME" > </PRE><PRE><B>ROLL NO.</B>  :    <input type="INTEGER" placeholder="ROLL NUMBER"></PRE><PRE><B>PASSWORD</B>  :    <input type="PASSWORD" placeholder="PASSWORD"> </PRE>
-                    <H3>SELECT YOUR COLLEGE & BRANCH :</H3>
- <select NAME="COLLEGE">
-     <OPTION VALUE="CHETANYA JR">CHETANYA JR</OPTION>
-     <OPTION VALUE="HIDAYA JR">HIDAYA JR</OPTION>
-     <OPTION VALUE="MEDHAVI JR">MEDHAVI JR</OPTION>
-     <OPTION VALUE="NARAYANA JR">NARAYANA JR</OPTION>
-     <OPTION VALUE="SRINIVASA JR">SRINIVASA JR</OPTION>
- </select>     <select name="BRANCH">
-    <OPTION VALUE="BIPC">BIPC</OPTION>
-    <OPTION VALUE="MPC">MPC</OPTION>
- </select>
-        <H3>SELECT YOUR CLASS :</H3>
-<label FOR="101">
-    <INPUT type="radio" VALUE="CLASS 11" NAME="CLASS" ID="101"> <B>CLASS 11</B><SUP>TH</SUP>
-</label>
-<label FOR="102">
-    <INPUT type="radio" VALUE="CLASS 12" NAME="CLASS" ID="102"> <B>CLASS 12</B><SUP>TH</SUP>
-        </label>
- <H3>SELECT FAV SUBJECTS :</H3>
- <LABEL for="103">
- <input type="checkbox" value="MATHS(A)" name="SUBJECT" id="103">MATHS(A)
- </LABEL>
- <LABEL for="104">
- <input type="checkbox" value="MATHS(B)" name="SUBJECT" id="104">MATHS(B)
- </LABEL>
- <LABEL for="105">
- <input type="checkbox" value="CHEMSTRY" name="SUBJECT" id="105">CHEMSTRY
- </LABEL>
- <LABEL for="106">
- <input type="checkbox" value="PHYSICS" name="SUBJECT" id="106">PHYSICS
- </LABEL>
- <label FOR="107">
- <input type="checkbox" value="BOTONY" name="SUBJECT" id="107">BOTONY
- </LABEL>
- <LABEL for="108">
- <input type="checkbox" value="ZOLOGY" name="SUBJECT" id="108">ZOLOGY
- </LABEL>
- <textarea NAME="FEEDBACK" ID="109" placeholder="Please Give Your Feedback" rows=5></textarea>
- <h1><a href="PHOTO.html">SUBMIT</a></h1>
-
-       
-
- 
+<body id="body">
+    <DIV>
+    <table id="T1">
+        <tr>
+            <th colspan="2"><h1 id="h1-reg">REGISTRATION FORM</h1></th>
+         </tr>
+         <TR>
+            <td><h5>NAME OF THE APPLICANT</h5></td>
+         </TR>
+         <tr>
+            <td class="td1" ><input type="text" name="name" placeholder="first name"></td>
+            <td class="td1"><input type="text" name="name" placeholder="last name"></td>
+         </tr>
+         <TR>
+            <td><h5>DATE OF BIRTH</h5></td>
+         </TR>
+         <tr>
+         <td colspan="2"><textarea name="DOB" id="date" cols="52" rows="1" placeholder="DD/MM/YY"></textarea></td>
+         </tr>
+         <TR>
+            <TD><h5>GENDER</h5></TD>
+         </TR>
+         <TR>
+            <TD>
+                <INPUT type="radio" name="GENDER" id="">MALE
+                <INPUT type="radio" name="GENDER" id="">FEMALE 
+            </TD>
+         </TR>
+         <TR>
+            <TD><h5>DETAILS OF SIBLINGS</h5></TD>
+         </TR>
+         <TR>
+            <td colspan="2"><textarea name="SIBLINGS" id="" cols="52" rows="2"></textarea></td>
+         </TR>
+         <TR>
+            <TD><H3>PARENTS INFORMATION</H3></TD>
+         </TR>
+         <TR>
+            <TD><h5>FATHER'S NAME</h5></TD>
+         </TR>
+         <tr>
+            <td class="td1"><input type="text" name="name" placeholder="First Name"></td>
+            <td class="td1"><input type="text" name="name" placeholder="Last Name"></td>
+         </tr>
+         <TR>
+            <TD><h5>FATHER'S QUALIFICATION</h5></TD>
+         </TR>
+         <TR>
+         <td colspan="2"><textarea name="" id="" cols="52" rows="1" ></textarea></td>
+         </TR>
+         <TR>
+           <TD><H5>PHONE</h5></TD>
+           <TD><h5>EMAIL</h5></TD>
+         </TR>
+         <tr>
+         <td class="td1"><input type="NUMBER" name="NUMBER" placeholder="### ### ####"></td>
+         <td class="td1"><input type="email" name="email" placeholder="email"></td>
+         </tr>
+         <TR>
+            <TD><h5>FATHER OCCUPATION</h5></TD>
+         </TR>
+         <TR>
+            <td colspan="2"><textarea name="" id="" cols="52" rows="1" ></textarea></td>
+         </TR>
+           <TD><h5>MOTHER'S NAME</h5></TD>
+         </TR>
+         <tr>
+         <td class="td1"><input type="text" name="name" placeholder="First Name"></td>
+         <td class="td1"><input type="text" name="name" placeholder="Last Name"></td>
+         </tr>
+         <TR>
+           <TD><h5>MOTHER'S QUALIFICATION</h5></TD>
+         </TR>
+         <TR>
+         <td colspan="2"><textarea name="" id="" cols="52" rows="1" ></textarea></td>
+         </TR>
+         <TR>
+            <TD><h5>PHONE</h5></TD>
+            <TD><h5>EMAIL</h5></TD>
+         </TR>
+         <tr>
+         <td class="td1"><input type="NUMBER" name="NUMBER" placeholder="### ### ####"></td>
+         <td class="td1"><input type="email" name="email" placeholder="email"></td>
+         </tr>
+         <TR>
+         <TR>
+            <TD><h5>ADDRESS</h5></TD>
+         </TR>
+         <TR>
+            <td colspan="2"><textarea name="" id="" cols="52" rows="2" placeholder="Street Address"></textarea></td>
+         </TR>
+         <TR>
+            <TD><input type="submit" value="submit">
+            <input type="reset" value="reset"></TD>
+        </TR>
+    </table>
+</DIV>
 </body>
 </html>
