@@ -248,13 +248,13 @@
     padding-top: 15px;
 }
 .img1 {
-    background-image: url("chapal.jpg");
+    background-image: url("slipper.jpg");
     background-size: cover;
     width: 270px ;
     height: 106px;
 }
 .img2 {
-    background-image: url("kapde.jpg");
+    background-image: url("clothes2.jpg");
     background-size: cover;
     width:180px;
     height: 200px;
@@ -266,7 +266,7 @@
     height: 200px;
 }
 .img4 {
-    background-image: url("banyan.jpg");
+    background-image: url("innerwear.jpg");
     background-size: cover;
     width:139px;
     height: 200px;

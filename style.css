@@ -16,7 +16,7 @@
     text-align: left;
     color: #BEBEBE;
     padding-left: 30px;
-    padding-bottom: 20PX;
+    padding-bottom: 10PX;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
     transition: all 0.25s ease-in;
@@ -39,24 +39,13 @@
     background-size: cover;
 }
 
-#info {
-    color: antiquewhite;
-    text-align: center;
-    text-transform: capitalize;
-    padding-right: 100px;
-}
-
-span {
-    color: #BEBEBE;
-    text-align: left;
-    font-size: 30px;
-    padding-left: 30px;
-    padding-top: 20px;
-    transition: all 0.35s ease-in;
-}
-
-#at {
-    font-size: 45px ;
+.web-logo {
+    height: 70px;
+    width: 165px;
+    background-image: url("web-logo.png");
+    background-size: cover;
+    margin-top: 20px;
+    margin-left: 15px;
 }
 
 i {
@@ -76,4 +65,19 @@ h5 {
 #h1-reg {
     width: 409px;
     height: 37px;
+}
+@media (max-width:475px) {
+    #indexbody {font-size: 0.7rem;
+     background-image: url();}
+    .h2-index { padding-left: 10px;}
+    #h1-ind { 
+        font-size: 1.3rem;
+        color:transparent;
+        -webkit-text-stroke: 1px white;
+    margin-top: 10px;
+  }
+   .web-logo { height: 30px;
+     width: 70px;
+     margin-top: 7px;
+     margin-left: 4px;}
 }
