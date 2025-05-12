@@ -3,105 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration form for students</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="body">
-    <DIV>
-    <table id="T1">
-        <tr>
-            <th colspan="2"><h1 id="h1-reg">REGISTRATION FORM</h1></th>
-         </tr>
-         <TR>
-            <td><h5>NAME OF THE APPLICANT</h5></td>
-         </TR>
-         <tr>
-            <td class="td1" ><input type="text" name="name" placeholder="first name"></td>
-            <td class="td1"><input type="text" name="name" placeholder="last name"></td>
-         </tr>
-         <TR>
-            <td><h5>DATE OF BIRTH</h5></td>
-         </TR>
-         <tr>
-         <td colspan="2"><textarea name="DOB" id="date" cols="52" rows="1" placeholder="DD/MM/YY"></textarea></td>
-         </tr>
-         <TR>
-            <TD><h5>GENDER</h5></TD>
-         </TR>
-         <TR>
-            <TD>
-                <INPUT type="radio" name="GENDER" id="">MALE
-                <INPUT type="radio" name="GENDER" id="">FEMALE 
-            </TD>
-         </TR>
-         <TR>
-            <TD><h5>DETAILS OF SIBLINGS</h5></TD>
-         </TR>
-         <TR>
-            <td colspan="2"><textarea name="SIBLINGS" id="" cols="52" rows="2"></textarea></td>
-         </TR>
-         <TR>
-            <TD><H3>PARENTS INFORMATION</H3></TD>
-         </TR>
-         <TR>
-            <TD><h5>FATHER'S NAME</h5></TD>
-         </TR>
-         <tr>
-            <td class="td1"><input type="text" name="name" placeholder="First Name"></td>
-            <td class="td1"><input type="text" name="name" placeholder="Last Name"></td>
-         </tr>
-         <TR>
-            <TD><h5>FATHER'S QUALIFICATION</h5></TD>
-         </TR>
-         <TR>
-         <td colspan="2"><textarea name="" id="" cols="52" rows="1" ></textarea></td>
-         </TR>
-         <TR>
-           <TD><H5>PHONE</h5></TD>
-           <TD><h5>EMAIL</h5></TD>
-         </TR>
-         <tr>
-         <td class="td1"><input type="NUMBER" name="NUMBER" placeholder="### ### ####"></td>
-         <td class="td1"><input type="email" name="email" placeholder="email"></td>
-         </tr>
-         <TR>
-            <TD><h5>FATHER OCCUPATION</h5></TD>
-         </TR>
-         <TR>
-            <td colspan="2"><textarea name="" id="" cols="52" rows="1" ></textarea></td>
-         </TR>
-           <TD><h5>MOTHER'S NAME</h5></TD>
-         </TR>
-         <tr>
-         <td class="td1"><input type="text" name="name" placeholder="First Name"></td>
-         <td class="td1"><input type="text" name="name" placeholder="Last Name"></td>
-         </tr>
-         <TR>
-           <TD><h5>MOTHER'S QUALIFICATION</h5></TD>
-         </TR>
-         <TR>
-         <td colspan="2"><textarea name="" id="" cols="52" rows="1" ></textarea></td>
-         </TR>
-         <TR>
-            <TD><h5>PHONE</h5></TD>
-            <TD><h5>EMAIL</h5></TD>
-         </TR>
-         <tr>
-         <td class="td1"><input type="NUMBER" name="NUMBER" placeholder="### ### ####"></td>
-         <td class="td1"><input type="email" name="email" placeholder="email"></td>
-         </tr>
-         <TR>
-         <TR>
-            <TD><h5>ADDRESS</h5></TD>
-         </TR>
-         <TR>
-            <td colspan="2"><textarea name="" id="" cols="52" rows="2" placeholder="Street Address"></textarea></td>
-         </TR>
-         <TR>
-            <TD><input type="submit" value="submit">
-            <input type="reset" value="reset"></TD>
-        </TR>
-    </table>
-</DIV>
+<body ID="REGESTRATION-BODY" >
+    <h2>REGISTRATION FORM FOR STUDENTS</h2>
+    <br>
+              <FORM ACTION="/action.php"> 
+                    <H5>SELECT YOUR CITY :</H5>
+ <select ID="CITY" NAME="CITY">
+    <OPTION VALUE="DELHI">DELHI</OPTION>
+    <OPTION VALUE="HYDERABAD">HYDERABAD</OPTION>
+    <OPTION VALUE="KOLKATA">KOLKATA</OPTION>
+    <OPTION VALUE="MUMBAI">MUMBAI</OPTION>
+    <OPTION VALUE="PUNE">PUNE</OPTION>
+ </select>
+ <br>
+                    <H5>ENTER YOUR COLLEGE DETAILS :</H5>
+                    <BR>
+                    <PRE>   <B>NAME</B>   :    <input type="text" placeholder="ENTER YOUR NAME" > </PRE><PRE><B>ROLL NO.</B>  :    <input type="INTEGER" placeholder="ROLL NUMBER"></PRE><PRE><B>PASSWORD</B>  :    <input type="PASSWORD" placeholder="PASSWORD"> </PRE>
+                    <br>
+                    <H5>SELECT YOUR COLLEGE & BRANCH :</H5>
+                    <br>
+ <select NAME="COLLEGE">
+     <OPTION VALUE="CHETANYA JR">CHETANYA JR</OPTION>
+     <OPTION VALUE="HIDAYA JR">HIDAYA JR</OPTION>
+     <OPTION VALUE="MEDHAVI JR">MEDHAVI JR</OPTION>
+     <OPTION VALUE="NARAYANA JR">NARAYANA JR</OPTION>
+     <OPTION VALUE="SRINIVASA JR">SRINIVASA JR</OPTION>
+ </select>   <select name="BRANCH">
+    <OPTION VALUE="BIPC">BIPC</OPTION>
+    <OPTION VALUE="MPC">MPC</OPTION>
+ </select>
+ <BR>
+ <br>
+        <H5>SELECT YOUR CLASS :</H5>
+        <br>
+<label FOR="eleven">
+    <INPUT type="radio" VALUE="CLASS 11" NAME="CLASS" ID="class">CLASS 11<SUP>TH</SUP>
+</label>
+<label FOR="twelve">
+    <INPUT type="radio" VALUE="CLASS 12" NAME="CLASS" ID="class"> CLASS 12<SUP>TH</SUP>
+        </label>
+        <br>
+        <BR>
+ <H5>SELECT FAV SUBJECTS :</H5>
+ <br>
+ <LABEL for="one">
+ <input type="checkbox" value="MATHS(A)" name="SUBJECT" class="SUBJECT">MATHS(A)
+ </LABEL>
+ <br>
+ <LABEL for="two">
+ <input type="checkbox"value="MATHS(B)"name="SUBJECT"class="SUBJECT">MATHS(B)
+ </LABEL>
+ <br>
+ <LABEL for="three">
+ <input type="checkbox" value="CHEMSTRY" name="SUBJECT" class="SUBJECT">CHEMSTRY
+ </LABEL>
+ <br>
+ <LABEL for="four">
+ <input type="checkbox" value="PHYSICS" name="SUBJECT" class="SUBJECT">PHYSICS
+ </LABEL>
+ <br>
+ <label FOR="five">
+ <input type="checkbox" value="BOTONY" name="SUBJECT" class="SUBJECT">BOTONY
+ </LABEL>
+ <br>
+ <LABEL for="six">
+ <input type="checkbox" value="ZOLOGY" name="SUBJECT" class="SUBJECT">ZOLOGY
+ </LABEL>
+ <br>
+ <br>
+ <br>
+ <textarea NAME="FEEDBACK" ID="109" placeholder="Please Give Your Feedback" rows=5></textarea>
+ <br>
+ <a id="a-reg"href="PHOTO.html">SUBMIT</a>
+
+       
+
+ 
 </body>
 </html>
